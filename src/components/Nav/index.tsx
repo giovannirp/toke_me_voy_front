@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ContainerMenu, ContentMenu } from "./style";
 
 export function Nav() {
@@ -5,11 +6,11 @@ export function Nav() {
     <ContainerMenu>
       <ContentMenu>
         <ul>
-          <li><a href="">Meu Canal</a></li>
-          <li><a href="">Bola Cheia</a></li>
-          <li><a href="">Bola Mucha</a></li>
-          <li><a href="">Torcidromentro</a></li>
-          <li><a href="">Login</a></li>
+          <li><Link to="">Meu Canal</Link></li>
+          <li><Link to="#">Bola Cheia</Link></li>
+          <li><Link to="#">Bola Mucha</Link></li>
+          <li><Link to="#">Torcidromentro</Link></li>
+          <li><Link to="#">Login</Link></li>
         </ul>
       </ContentMenu>
     </ContainerMenu>

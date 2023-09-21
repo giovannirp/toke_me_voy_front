@@ -1,25 +1,13 @@
-import torcidaOrganizada from '../../../../assets/torcida.png';
-
-
-import { ContainerAside, ContentAside, ContentAsidePrime } from "./style";
+import { CardList } from "./CardList";
+import { CardVideo } from "./CardVideo";
+import { ContainerAside } from "./style";
 
 export function AsideInfo() {
   return (
     <ContainerAside>
-      <ContentAsidePrime>
-        <img src={torcidaOrganizada}  alt="" />
-        <div>
-          <h2>lorem ipsum</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-          <span />
-          <h2>lorem ipsum</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-          <span />
-          <h2>lorem ipsum</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div>
-      </ContentAsidePrime>
-      <ContentAside>
+      <CardList />
+      <CardVideo />
+      {/* <ContentAside>
         <iframe
           width="500"
           height="250"
@@ -29,7 +17,7 @@ export function AsideInfo() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-      </ContentAside>
+      </ContentAside> */}
     </ContainerAside>
   );
 }
